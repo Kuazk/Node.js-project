@@ -39,7 +39,11 @@ function isHabitablePlanet(planet) {
     && planet['koi_prad'] < 1.6;
 }
 
+function getAllplanets() {
+    return wearablePlanets
+}
+
 module.exports ={
     loadPlanetsData,
-    planets: wearablePlanets,
+    getAllplanets,
 }
